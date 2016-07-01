@@ -1,70 +1,145 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE HTML>
 <html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <!-- <link rel="stylesheet" href="stylesheets/smartphone.css" type="text/css" media="screen and (min-width:0px) and (max-width:599px)"> -->
-    <link rel="stylesheet"
-    href="stylesheets/startpack.css" type="text/css">
-    <meta name="description" content="検索エンジンに表示したい文章も、
-              このように文字コード宣言の後ろに書きます。">
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data:; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="components/loader.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        // PhoneGap event handler
+        document.addEventListener("deviceready", onDeviceReady, false);
+        function onDeviceReady() {
+            console.log("PhoneGap is ready");
+        }
+    </script>
     <style type="text/css">
-      <!--
-      a:hover{color:#ff0000;}
-      -->
-    </style>
-    <title>あなたにオススメのお店をピックアップ</title>
-    <script src="javascripts/startpack.js"></script>
-    <script src="javascripts/jquery.fittext.js"></script>
-  </head>
+    <!-->
+    /* Fonts */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400);
 
-  <body>
-  <div id="campaign">
-    <p class="catchcopy"> どれを食べたい?</p>
-    <table class="campaign_box">
-      <tr>
-        <td><img src="images/sweets.jpg" width="100%">スイーツ系</td>
-        <td><img src="images/italian.jpg" width="100%">イタリアン</td>
-      </tr>
-      <tr>
-        <td><img src="images/fried.jpg" width="100%">定食系</td>
-        <td><img src="images/sweets.jpg" width="100%">スイーツ系</td>
-      </tr>
-    </table>
+/* fontawesome */
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+/* Simple Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* body */
+body {
+  background: #e9e9e9;
+  color: #5e5e5e;
+  font: 400 87.5%/1.5em 'Open Sans', sans-serif;
+}
+
+/* Form Layout */
+.form-wrapper {
+  background: #fafafa;
+  margin: 3em auto;
+  padding: 0 1em;
+  max-width: 370px;
+}
+
+h1 {
+  text-align: center;
+  font-size:30px;
+  color: #660000;
+  padding: 1em 0;
+}
+
+form {
+  padding: 0 1.5em;
+}
+
+.form-item {
+  margin-bottom: 0.75em;
+  width: 100%;
+}
+
+.form-item input {
+  background: #fafafa;
+  border: none;
+  border-bottom: 2px solid #e9e9e9;
+  color: #666;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  height: 50px;
+  transition: border-color 0.3s;
+  width: 100%;
+}
+
+.form-item input:focus {
+  border-bottom: 2px solid #c0c0c0;
+  outline: none;
+}
+
+.button-panel {
+  margin: 2em 0 0;
+  width: 100%;
+}
+
+.button-panel .button {
+  background: #FFCC66;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  height: 50px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2em;
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background 0.3s ease-in-out;
+  width: 100%;
+}
+
+.button:hover {
+  background: #ee3e52;
+}
+
+.form-footer {
+  font-size: 1em;
+  padding: 2em 0;
+  text-align: center;
+}
+
+.form-footer a {
+  color: #8c8c8c;
+  text-decoration: none;
+  transition: border-color 0.3s;
+}
+
+.form-footer a:hover {
+  border-bottom: 1px dotted #8c8c8c;
+}
+    -->
+</style>
+</head>
+
+<body>
+<div class="form-wrapper">
+  <h1>Sign In</h1>
+  <form>
+    <div class="form-item">
+      <label for="email"></label>
+      <input type="email" name="email" required="required" placeholder="Email Address"></input>
+    </div>
+    <div class="form-item">
+      <label for="password"></label>
+      <input type="password" name="password" required="required" placeholder="Password"></input>
+    </div>
+    <div class="button-panel">
+      <input type="submit" class="button" title="Sign In" value="Sign In" onclick="location.href='mypage.html'"></input>
+    </div>
+  </form>
+  <div class="form-footer">
+    <p><a href="registration.html">Create an account</a></p>
   </div>
+</div>
 
-
-  <!-- <div id='overview'>
-    <p class='catchcopy'>キャンペーン概要</p>
-    <dl class='overview_list'>
-      <dt class='title'>キャンペーン名</dt>
-      <dd class='description'>開業スタートパック2016</dd>
-      <dt class='title'>提供サービス一覧</dt>
-      <dd class='description'>iPadを使った高機能POSレジシステム ユビレジ</dd>
-      <dd class='description'>スマートフォン・タブレットを使ったクレジットカード決済 Coiney(コイニー)</dd>
-      <dd class='description'>クラウド会計ソフト freee</dd>
-      <dd class='description'>法人口座 ジャパンネット銀行</dd>
-      <dd class='description'>店内BGM モンスターチャンネル</dd>
-      <dd class='description'>クラウド勤怠管理 ジョブカン</dd>
-      <dt class='title'>キャンペーン特典</dt>
-      <dd class='description'>毎週金曜日に抽選で1名様に「iPad mini 2 16GB WiFiモデル」※1をプレゼントします。</dd>
-      <dd class='description'>iPadを使った高機能POSレジシステム ユビレジ、スマートフォン決済 Coiney(コイニー) 、 クラウド会計ソフト freee、店内BGM モンスターチャンネル、ジャパンネット銀行、クラウド勤怠管理　ジョブカンへのご登録を1個でも行うと、1回の抽選券が与えられます。登録したサービスの数だけ抽選券が増える仕組みとなっており、最大6回まで抽選券を得られます。</dd>
-      <dt class='title'>キャンペーン対象期間</dt>
-      <dd class='description'>2015年8月5日(水)12:00〜2016年3月31日(土)23:59</dd>
-      <dt class='title'>ご注意事項</dt>
-      <dd class='description'>本キャンペーンは新規に開業（開店）予定、もしくは開業（開店）日から1年以内の事業者（法人・個人事業主）さまを対象といたします。</dd>
-      <dd class='description'>本キャンペーンページ内のお申し込みフォームに必要情報を記入していただくと、登録完了後にご指定いただいたメールアドレスに「ご登録完了メール」をお送りします。</dd>
-      <dd class='description'>プレゼントに当選された方にのみ当選メールをお送りいたしますので、メールが届かない場合は自動的に不当選になるので、ご注意ください。</dd>
-      <dd class='description'>不当選の方にはお知らせをいたしませんので、予めご了承ください。</dd>
-      <dd class='description'>同一サービスを複数回に渡って登録をいただいても、抽選対象にはなりません。</dd>
-      <dd class='description'>本キャンペーンはコイニー株式会社が運営事務局として事業者様の個人情報を預かり、キャンペーン参画各社（株式会社ユビレジ、freee株式会社、株式会社ジャパンネット銀行、株式会社モンスター・ラボ、株式会社Donuts）と情報の連携を行っております。個人情報の取り扱いについてはコイニー株式会社のプライバシーポリシーに準拠いたします。（コイニーのプライバシーポリシーは http://coiney.com/legal/privacy.html をご確認ください）</dd>
-      <dd class='description'>キャンペーン特典のiPad mini 2は当選された方のサービスへの申し込み確認が取れたのち、約2週間を目処に発送いたします。</dd>
-      <dd class='description'>特典のiPad mini 2の不具合・故障については商品到着後、1週間以内にキャンペーン事務局であるコイニー株式会社へお問い合わせください。1週間を越えたのち当キャンペーンおよびキャンペーン参画各社は特典への責任等は負えません。何卒ご了承ください。</dd>
-      <dd class='description'>本キャンペーンの内容は予告なく変更する場合がございます。予めご了承ください。</dd>
-    </dl>
-    <p>
-      <small class='annotation'>※1 キャンペーン特典の「iPad mini 2」はWiFiモデル(16GB）のみとなります。端末カラーは選べませんので、予めご了承ください。</small>
-    </p>
-  </div>
- -->
+</body>
 </html>

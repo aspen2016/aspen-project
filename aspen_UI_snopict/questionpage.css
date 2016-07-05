@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: 'Arial';
+}
+
+#container{
+    height: auto;
+    width: 100%;
+}
+
+#header{
+    width: 100%;
+    height:85px;
+    font-family: 'Open Sans';
+    background-color: #FFCC66;
+}
+
+#contents{
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+}
+
+#footer{
+    background-color: #FFFFF0;
+    height:70px;
+    width:100%;
+    position: fixed;
+    bottom: 0;
+}
+
+h1 {
+    width: 100%;
+    text-shadow: 0;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 100;
+    padding: 0;
+    margin: 30px 0 20px 0;
+    color: black;
+    font-family: 'Arial';
+}
+
+#hques{
+    width: 100%;
+    text-shadow: 0;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 100;
+    padding: 0;
+    margin: 0 auto;
+    color: black;
+    font-family: 'メイリオ';  
+}
+
+#alone{
+    margin: 30px 0 20px 0;
+    width: 100%;
+    float: left;
+    height: 60px;
+}
+
+#withsomeone{
+    margin: 40px 0 20px 0;
+    width: 100%;
+    float: left;
+    height: 60px;
+}
+
+#withsomeone2{
+    margin: 40px 0 0 0;
+    width: 100%;
+    float: left;
+    height: 60px;
+}
+
+#choice1{
+    margin: 0 0 0 20px ;
+    width: 28%;
+    float: left;
+}
+
+#choice2{
+    margin: 0 0 0 10px;
+    width: 28%;
+    float: left;
+}
+
+#choice3{
+    margin: 0 0 0 10px;
+    width: 28%;
+    float: left;
+}
+
+
+
+#backbutton{
+    margin-top: 23px;
+    
+}
+
+/**
+ * Large Button Component
+ * http://components.onsenui.io/
+ */
+ .button--choice1{
+    width:20%;
+    height:50px;
+    position: relative;
+    text-align: center;
+    border: 1px solid #DDD;
+    color: #111;
+    
+    background: -moz-linear-gradient(top,#FF9999 0%,#FF9999 50%,#FF99AB 50%,#FF99AB);
+    background: -webkit-gradient(linear, left top, left bottom,from(#FF9999), color-stop(0.5,#FF9999), color-stop(0.5,#FF99AB),  to(#FF99AB));
+    
+    background: ;
+    padding: 25px 0 25px 0;
+    font-family: 'メイリオ';
+    font-weight: normal;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+     display: table-cell;
+     vertical-align: middle;
+ }
+
+ .button--choice2{
+    width:20%;
+    height:50px;
+    position: relative;
+    text-align: center;
+    border: 1px solid #DDD;
+    color: #111;
+
+    
+    background: -moz-linear-gradient(top,#87CEFA 0%,#87CEFA 50%,#87CEEB 50%,#87CEEB);
+    background: -webkit-gradient(linear, left top, left bottom,from(#87CEFA), color-stop(0.5,#87CEFA), color-stop(0.5,#87CEEB),  to(#87CEEB));
+    
+    padding: 25px 0 25px 0;
+    font-family: 'メイリオ';
+    font-weight: normal;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    display: table-cell;
+    vertical-align: middle;
+     
+ }
+ 
+
+.button--back{
+    text-align: center;
+  　position: relative;
+    background-color: #D2B48C;
+    margin-left: 30px;
+    margin-top: 17px;
+    vertical-align: middle;
+    border: 1px solid #DDD;
+    color: black;
+    font-size: 10;
+    padding: 5px 5px 5px 5px;
+}
+

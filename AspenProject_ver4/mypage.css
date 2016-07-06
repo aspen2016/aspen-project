@@ -1,0 +1,103 @@
+body{
+    margin: 0;
+}
+
+#header{
+    width: 100%;
+    height:85px;
+    font-family: 'Open Sans';
+    background-color: #e5a323;
+}
+
+#container{
+    margin: 0 auto;
+}
+    
+#footer{
+    background-color: #FFFFF0;
+    height:70px;
+    width:100%;
+    position: fixed;
+    bottom: 0;
+}
+
+#username{
+    font-family: "メイリオ";
+    font-size : 1.2em;
+    margin: 20px 0 5px 0;
+    text-align: center;
+    font-weight: 100;
+}
+
+#pict_user{
+    width: 100%;
+    height: 100%;
+}
+    
+.list {
+    width:30%;
+    height:10px;
+    float:right;
+    margin: 7px 60px 0 0;
+    font-size: 1.2em;
+    padding: 0.7em 0;
+    text-align: right;
+    font-family: "Arial";
+}
+
+.list a {
+    color: #8c8c8c;
+    text-decoration: none;
+    transition: border-color 0.3s;
+}
+
+.list a:hover {
+    border-bottom: 1px dotted #8c8c8c;
+    color:#FFCC66;
+}
+    
+#image{
+    float:left;
+    width:45%;
+    padding-left: 25px;
+    padding-top: 25px;
+}
+    
+#searchbutton{
+    clear:both;
+    width:250px;
+    margin:0 auto;
+    padding-top: 30px;
+}
+
+.search{
+    width:250px;
+    height:50px;
+    position:relative;
+    text-align:center;
+    background-color: #dcdcdc;
+    padding: 20px 50px 20px 50px;
+    font-family: 'メイリオ';
+    font-weight: normal;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    cursor:pointer;
+}
+    
+#newsfield{
+    margin-left: 15px;
+    width: 80px;
+    background-color: #dcdcdc;
+    font color:"#ffffff";
+    font-size:1.0em;
+    font-family: "Arial";
+    margin-top:60px;
+    padding: 5px 10px 5px 10px;
+}
+
+#news{
+    font-family: "メイリオ";
+    overflow: auto;
+    margin-bottom: 70px;
+}

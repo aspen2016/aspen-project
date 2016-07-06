@@ -2,8 +2,9 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: white;
     font-family: 'Arial';
+    text-align: center;
+    font-family: "メイリオ";
 }
 
 
@@ -12,15 +13,16 @@ body {
     width: 100%;
 }
 
-#header{
-    width: 100%;
-    height:50px;
-    font-family: 'Open Sans';
-    background-color: #FFCC66;
+#header {
+    height: 85px;
+    background-color: #ffff99;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 10px;
 }
 
 #contents{
-    padding-bottom: 30px;
     overflow-y: auto;
     overflow-x: hidden;
 }
@@ -43,6 +45,10 @@ body {
     background-color: #ff6666; color: black;
 }
 
+#shop1{
+    cursor: pointer;
+}
+
 #shop2{
     width: 100%;
     padding: 5px 5px 5px 0;
@@ -50,6 +56,10 @@ body {
     font-family: "メイリオ";
     overflow: auto;
     background-color: #ff99cc; color: black;
+}
+
+#shop2{
+    cursor: pointer;
 }
 
 #shop3{
@@ -80,9 +90,11 @@ body {
 }
 
 #map_canvas{
+    position: inherit !important;
+    display: block;
     width: 100%;
     float: left;
-    height: 300px;
+    height: 200px;
     text-align: center;
 }
 
@@ -91,37 +103,36 @@ body {
     height: 90%
 }
 
-#canvas{
+.canvas{
     width: 50%;
     float: left;
     height: 200px;
-    text-align: center;    
+    margin: auto;
+    text-align: center;
 }
 
-#info{
+.info {
     width: 50%;
     height: 200px;
-    float: right;
+    float: left;
     text-shadow: 0;
     text-align: center;
-    font-size: 0.7em;
+    font-size: 0.7rem;
     font-weight: 30;
     padding: 10 10 10 10;
     margin: 0 auto;
     color: black;
-    font-family: 'Arial';
     overflow-y: auto;
+    line-height: 1.1;
 }
 
 
 
 hstar{
-    font-family: 'Arial';
     font-size: 10;
 }
 
 hdistance{
-    font-family: 'Arial';
     font-size: 10;
 }
 
@@ -138,15 +149,10 @@ hdistance{
     color: black;
     font-size: 10;
     padding: 5px 5px 5px 5px;
-    
+
 }
 
-#tab1{
-    background-color: #ff6666;
-}
-#tab2{
-    background-color:  #ff6666;
-}
+
 #tab3{
     background-color: #ff99cc;
 }
@@ -162,8 +168,7 @@ hdistance{
 
 
 #backbutton{
-    margin-top: 23px;
-    
+    margin-top: 5px;
 }
 
 /**
@@ -177,10 +182,10 @@ hdistance{
     text-align: center;
     border: 1px solid #DDD;
     color: #111;
-    
+
     background: -moz-linear-gradient(top,#FF9999 0%,#FF9999 50%,#FF99AB 50%,#FF99AB);
     background: -webkit-gradient(linear, left top, left bottom,from(#FF9999), color-stop(0.5,#FF9999), color-stop(0.5,#FF99AB),  to(#FF99AB));
-    
+
     background: ;
     padding: 50px 30px 50px 30px;
     font-family: 'メイリオ';
@@ -198,10 +203,10 @@ hdistance{
     border: 1px solid #DDD;
     color: #111;
 
-    
+
     background: -moz-linear-gradient(top,#87CEFA 0%,#87CEFA 50%,#87CEEB 50%,#87CEEB);
     background: -webkit-gradient(linear, left top, left bottom,from(#87CEFA), color-stop(0.5,#87CEFA), color-stop(0.5,#87CEEB),  to(#87CEEB));
-    
+
     padding: 50px 30px 50px 30px;
     font-family: 'メイリオ';
     font-weight: normal;
@@ -209,32 +214,113 @@ hdistance{
     -moz-border-radius: 8px;
     -webkit-border-radius: 8px;;
  }
- 
 
-.button--back{
+
+.footer_button{
     text-align: center;
-  　position: relative;
+  　 position: relative;
     background-color: #D2B48C;
-    margin-left: 30px;
-    margin-top: 17px;
     vertical-align: middle;
     border: 1px solid #DDD;
     color: black;
     font-size: 10;
     padding: 5px 5px 5px 5px;
-}
-.button--research{
-    text-align: center;
-  　position: relative;
-    background-color: #D2B48C;
-    margin-left: 150px;
-    margin-top: 1px;
-    vertical-align: middle;
-    border: 1px solid #DDD;
-    color: black;
-    font-size: 10;
-    padding: 5px 5px 5px 5px;
-    
+    text-decoration: none;
 }
 
+/*--------------土橋記入--------------*/
 
+ul{
+  display: table;
+  height: 40px;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  -webkit-padding-start: 0px;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+}
+
+#contents ul{
+  padding-top: 5px;
+}
+
+ul a{
+  cursor: pointer;
+}
+
+ul li{
+  display: table-cell;
+  height: 100%;
+  float: left;
+  width: 33%;
+  vertical-align: middle;
+  padding-top: 8px;
+  color: black;
+  font-weight: bold;
+  -webkit-border-top-left-radius: 8px;
+  -webkit-border-top-right-radius: 8px;
+  -moz-border-radius-topleft: 8px;
+  -moz-border-radius-topright: 8px;
+}
+
+ul .li1{
+  background-color: #ff6666;
+  vertical-align: middle;
+}
+
+ul .li2{
+  background-color: #ff99cc;
+  opacity: 0.5;
+}
+
+ul .li3{
+  background-color: #ffff99;
+  opacity: 0.5;
+}
+
+.contents{
+  text-align: center;
+}
+
+.shop_title{
+  font-size: 0.9rem;
+}
+
+#cont1{
+  /*background-color: #FFD0D0;*/
+  display: block;
+  height: 250px;
+  padding-top: 15px;
+  margin-top: -1px;
+}
+
+#cont2{
+  /*background-color: #FFB0D8;*/
+  display: block;
+  height: 250px;
+  padding-top: 15px;
+  margin-top: -1px;
+  display: none;
+}
+
+#cont3{
+  /*background-color: #ffff99;*/
+  display: block;
+  height: 250px;
+  padding-top: 15px;
+  margin-top: -1px;
+  display: none;
+}
+
+button {
+    width: 96%;
+    height: 40px;
+    background: none;
+    background-color: rgb(246, 73, 44);
+    color: white;
+    border: 0;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+}

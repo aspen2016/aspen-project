@@ -10,7 +10,7 @@
     $DB_SHOP = "restaurant";
     $TABLE_SHOP = "info_shop2";
     $selectdb = mysql_select_db($DB_USER,$CON);
-    
+    mysql_query('SET NAMES utf8', $sql);
 //得点計算用の関数
 function calc_point($shop,$user){
     $point = 0;
@@ -66,7 +66,7 @@ class Shop_Info{
     function setCategory($category){
         $this->category = $category;
     }
-    
+
     function getId(){
         return $this->id;
     }
@@ -84,7 +84,7 @@ class Shop_Info{
     }
     function getPict2(){
         return $this->pict2;
-    }    
+    }
     function getHours(){
         return $this->hours;
     }
@@ -148,7 +148,7 @@ while($row = mysql_fetch_array($rst)){
 $category_sum = 0;
 for($i=0;$i<22;$i++){
     $category_sum += $tend_user[$i];
-}    
+}
 for($i=0;$i<22;$i++){
     $tend_user[$i]=$tend_user[$i]/$category_sum;
 }
@@ -279,7 +279,7 @@ if($pattern == 1){//作業
         $tend_user[23] *= -1.1;
     }else{
         $tend_user[23] *= 1.1;
-    }    
+    }
 }elseif($pattern == 7){//女子だけ
      if($tend_user[18]<0.5){
         $tend_user[18] += 1;

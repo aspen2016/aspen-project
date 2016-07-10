@@ -978,7 +978,7 @@ if($search_type == 1){
     <div id = "footer">
       <ul>
         <li><a class="footer_button" href="index.html">戻る</a><li>
-        <li><a class="footer_button" href="http://localhost/aspen2/suggest.php?pattern=<?php echo "$search_type"?>">再検索</a></li>
+        <li><a class="footer_button" href="http://localhost/aspen0710/suggest.php?pattern=<?php echo "$search_type"?>">再検索</a></li>
       </ul>
     </div>
 </body>

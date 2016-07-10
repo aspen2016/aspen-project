@@ -2,13 +2,11 @@ body {
     margin: 0;
     padding: 0;
     background-color: white;
-    font-family: 'Arial';
+    color: #5e5e5e;
+    font-family: 'メイリオ';
 }
 
-#container{
-    height: auto;
-    width: 100%;
-}
+
 
 #header{
   display: table;
@@ -21,12 +19,13 @@ body {
   text-align: center;
   vertical-align: middle;
   position: relative;
+  box-sizing: border-box;
 }
 
 #header .header_content{
   display: table-cell;
   height: 40px;
-  width: 130px;
+  width: 150px;
   color: white;
   font-family: 'メイリオ';
   font-size: 20px;
@@ -39,19 +38,25 @@ body {
   margin: auto;
 }
 
+#header .header_title{
+  margin-top: 5px;
+}
+
+
 #header img{
-width: 40px;
-height: 40px;
-float: left;
+  vertical-align: middle;
+}
+
+.logo1{
+  width: 50px;
+}
+
+.logo2{
+  width: 100px;
 }
 #header p{
   float: left;
   margin-top: 9px;;
-}
-
-#contents{
-    padding-bottom: 30px;
-    margin-bottom: 50px;
 }
 
 #footer{
@@ -70,7 +75,6 @@ h1 {
     font-weight: 100;
     padding: 0;
     margin: 30px 0 20px 0;
-    color: black;
     font-family: 'Arial';
 }
 
@@ -82,8 +86,12 @@ h1 {
     font-weight: 100;
     padding: 0;
     margin: 0 auto;
-    color: black;
     font-family: 'メイリオ';
+}
+
+.button_box{
+  display: block;
+  height: 400px;
 }
 
 #alone{
@@ -93,11 +101,21 @@ h1 {
     height: 60px;
 }
 
+#alone a{
+  font-size: 13px;
+  text-decoration: none;
+    margin-bottom: 10px;
+}
+
 #withsomeone{
     margin: 40px 0 20px 0;
     width: 100%;
     float: left;
     height: 60px;
+}
+#withsomeone a{
+  font-size: 13px;
+  text-decoration: none;
 }
 
 #withsomeone2{
@@ -105,6 +123,11 @@ h1 {
     width: 100%;
     float: left;
     height: 60px;
+}
+#withsomeone2 a{
+  font-size: 13px;
+  text-decoration: none;
+  margin-bottom: 10px;
 }
 
 #choice1{
@@ -142,7 +165,7 @@ h1 {
     position: relative;
     text-align: center;
     border: 1px solid #DDD;
-    color: #111;
+    color: #5e5e5e;
 
     background: -moz-linear-gradient(top,#FF9999 0%,#FF9999 50%,#FF99AB 50%,#FF99AB);
     background: -webkit-gradient(linear, left top, left bottom,from(#FF9999), color-stop(0.5,#FF9999), color-stop(0.5,#FF99AB),  to(#FF99AB));
@@ -164,7 +187,7 @@ h1 {
     position: relative;
     text-align: center;
     border: 1px solid #DDD;
-    color: #111;
+    color: #5e5e5e;
 
 
     background: -moz-linear-gradient(top,#87CEFA 0%,#87CEFA 50%,#87CEEB 50%,#87CEEB);
@@ -181,16 +204,17 @@ h1 {
 
  }
 
+.foot{
+  text-align: center;
+}
 
 .button--back{
     text-align: center;
-  　position: relative;
-    background-color: #D2B48C;
-    margin-left: 30px;
+    position: relative;
     margin-top: 17px;
     vertical-align: middle;
-    border: 1px solid #DDD;
-    color: black;
+    text-decoration: none;
     font-size: 10;
     padding: 5px 5px 5px 5px;
+    color: #5e5e5e;
 }

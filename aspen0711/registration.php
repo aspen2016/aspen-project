@@ -112,7 +112,7 @@
 <body>
   <div id="header">
     <div class="header_content">
-      <img src="logo.jpg"><div class="header_title">ぐるちょ</div>
+      <img src="logo1.gif" class="logo1"><img src="logo2.gif" class="logo2">
     </div>
   </div>
 <form action="" method="post">
